@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+    /* 13:00 for font */
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    width: 100%;
+}
+
+#home {
+    width: 100%;
+}
+
+#nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 3vmax 10vmax;
+    /* background-color: rgba(255, 0, 0, 0.527); */
+}
+
+#nav-left {
+    display: flex;
+    gap: 2vmax;
+}
+
+#nav a {
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.7vmax;
+    font-weight: 800;
+}
+
+#nav > a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0.9vmax;
+    font-weight: 900;
+}
+
+#hero {
+    width: 100%;
+    margin-top: 15vmax;
+    padding: 0vmax 10vmax;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#sustain {
+    width: 10vmax;
+}
+
+#sustain > p {
+    font-size: 0.7vmax;
+    font-weight: 800;
+    text-transform: capitalize;
+    opacity: 0.5;
+    margin: 0.6vmax 0vmax;
+}
+
+#sustain > #sus-image-wrapper {
+    width: 100%;
+    height: 15vmax;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+#sus-image-wrapper > img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+#ephemeral {
+    width: 30vmax;
+    min-height: 42vmax;
+    position: relative;
+}
+
+#ephemeral-headings {
+    top: -19%;
+    left: -16%;
+    position: absolute;
+}
+
+#ephemeral-headings > h1 {
+    font-size: 5.8vmax;
+    font-weight: 400;
+    letter-spacing: -0.5vmax;
+    line-height: 1;
+    /* line-height: 0.9; */
+}
+
+#ephemeral-image-and-text  {
+    width: fit-content;
+    height: fit-content;
+    border-radius: 10px;
+}
+
+#ephemeral-image-and-text > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+#ephemeral-image-and-text > p {
+    font-size: 1.2vmax;
+    letter-spacing: -0.08vmax;
+    line-height: 1.4;
+    width: 40%;
+    margin-top: 1.5vmax;
+}
+
+#visit {
+    display: flex;
+    align-items: center;
+    gap: 0.8vmax;
+}
+
+#visit > h3 {
+    color: #696969;
+    font-weight: 400;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+#circle-visit {
+    width: 3vmax;
+    height: 3vmax;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid #696969;
+    cursor: pointer;
+}
+
+#circle-visit > i {
+    color: #696969;
+}
+
+#motive {
+    margin-top: 8vmax;
+    padding: 3vmax 10vmax;
+    display: flex;
+    justify-content: space-between;
+}
+
+#motive > h3 {
+    opacity: 0.6;
+    font-size: 1.4vmax;
+    font-weight: 400;
+    letter-spacing: -0.05vmax;
+}
+
+#motive > p {
+    font-size: 2.2vmax;
+    font-weight: 600;
+    line-height: 1.7;
+    letter-spacing: -0.1vmax;
+    text-align: right;
+    width: 86%;
+    margin-top: 3vmax;
+}
+
+#motive > p > span {
+    display: inline-block;
+    border-radius: 100px;
+    background-color: red;
+    margin: 0px 0.8vmax;
+    margin-bottom: -0.7vmax;
+    background-position: center;
+    background-size: cover;
+}
+
+#motive > p > span:nth-child(1n) {
+    width: 3.8vmax;
+    height: 2.8vmax;
+}
+
+#motive > p > span:nth-child(2n) {
+    width: 6vmax;
+    height: 2.8vmax;
+}
+
+#motive > p > span:nth-child(1) {
+    background-image: url(./bluegirl.jpg);
+    background-position: 0% 60%;
+}
+
+#motive > p > span:nth-child(2) {
+    background-image: url(./cabbage.jpg);
+}
+
+#motive > p > span:nth-child(3) {
+    background-image: url(./grass.jpg);
+}
+
+#pictures {
+    padding: 0vmax 12vmax 3vmax 14vmax;
+    margin-top: 8vmax;
+    display: flex;
+    justify-content: space-between;
+}
+
+#first-pic {
+    width: 16vmax;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#first-pic > #pic-image {
+    width: 100%;
+    height: 24vmax;
+    margin-bottom: 1.4vmax;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#pic-image > img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+#first-pic > h2, #second-pic > h2 {
+    margin-bottom: 0.6vmax;
+    font-size: 2vmax;
+    font-weight: 500;
+    letter-spacing: -0.06vmax;
+}
+
+#first-pic > p, #second-pic > p {
+    font-size: 0.9vmax;
+    font-weight: 400;
+    letter-spacing: -0.06vmax;
+    opacity: 0.8;
+    width: 70%;
+}
+
+#second-pic {
+    width: 24vmax;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#second-pic > #pic-image {
+    width: 100%;
+    height: 36vmax;
+    margin-bottom: 1.4vmax;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#second-pic > p { 
+    text-align: right;
+    width: 80%;
+}
+
+#banner {
+    width: 100%;
+    margin-top: 8vmax;
+    display: flex;
+    align-items: center;
+}
+
+#banner-image {
+    width: 65%;
+    height: 60vh;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    overflow: hidden;
+}
+
+#banner-image > img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 0% 70%;
+    cursor: pointer;
+}
+
+#banner-text {
+    width: 35%;
+    padding-left: 3vmax;
+}
+
+#banner-text > h1 {
+    margin-bottom: 0.6vmax;
+    font-size: 2.5vmax;
+    font-weight: 500;
+    letter-spacing: -0.06vmax;
+    line-height: 1.1;
+    width: 80%;
+}
+
+#banner-text > p {
+    margin-top: 1.4vmax;
+    margin-bottom: 0.6vmax;
+    font-size: 1vmax;
+    font-weight: 400;
+    letter-spacing: -0.06vmax;
+    width: 50%;
+}
+
+#future {
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+#future > video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+#future-text {
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffffbd;
+    padding: 1vmax 2vmax;
+    border-radius: 10px;
+}
+
+#future-text > button {
+    padding: 0.6vmax 1.4vmax;
+    border: 0;
+    outline: 0;
+    border-radius: 100px;
+    color: #000;
+    border: 1px solid #000;
+    background-color: transparent;
+    text-transform: capitalize;
+    font-size: 0.6vmax;
+    font-weight: 600;
+    margin-top: 0.8vmax;
+    cursor: pointer;
+}
+
+#future-text > h1 {
+    font-size: 2vmax;
+    font-weight: 500;
+    cursor: pointer;
+}
